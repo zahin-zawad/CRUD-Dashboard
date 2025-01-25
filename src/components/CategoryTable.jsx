@@ -10,7 +10,7 @@ function CategoryTable({ categories, handleEdit, setCategories }) {
         <thead>
           <tr className="bg-gray-200">
             <th className="py-2 px-4">Category Name</th>
-            <th className="py-2 px-4">Description</th>
+            <th className="py-2 px-4">Slug</th>
             <th className="py-2 px-4">Order Count</th>
             <th className="py-2 px-4">Actions</th>
           </tr>
@@ -18,10 +18,10 @@ function CategoryTable({ categories, handleEdit, setCategories }) {
         <tbody>
           {categories.map((category) => (
             <tr key={category.slug} className="border-b">
-              <td className="py-2 px-4">{category.name}</td>
-              <td className="py-2 px-4">{category.slug}</td>
-              <td className="py-2 px-4">{category.orderCount}</td>
-              <td className="py-2 px-4">
+              <td className="py-2 px-4 text-center">{category.name}</td>
+              <td className="py-2 px-4 text-center">{category.slug}</td>
+              <td className="py-2 px-4 text-center">{category.orderCount}</td>
+              <td className="py-2 px-4 text-center">
                 <button
                   className="text-blue-500 mr-2"
                   onClick={() => handleEdit(category)}

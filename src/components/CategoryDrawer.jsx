@@ -49,7 +49,7 @@ function CategoryDrawer({ setDrawerOpen, addCategory, updateCategory, editingCat
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-1">Description</label>
+          <label className="block mb-1">Slug</label>
           <input
             type="text"
             className="w-full border border-gray-300 p-2 rounded"
